@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // bắt buộc khi dùng "paths"
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src"
+  ]
+}
