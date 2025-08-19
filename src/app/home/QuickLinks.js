@@ -1,6 +1,6 @@
 export default function QuickLinks() {
     return (
-        <div className="grid grid-cols-4 grid-rows-2 gap-10">
+        <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2 gap-10">
             <img className="w-full object-cover" src="/logo-duong-dan-1.svg" alt="Chuyển đến cổng dịch vụ khác" />
             <img className="w-full object-cover" src="/logo-duong-dan-2.svg" alt="Chuyển đến cổng dịch vụ khác" />
             <img className="w-full object-cover" src="/logo-duong-dan-3.svg" alt="Chuyển đến cổng dịch vụ khác" />

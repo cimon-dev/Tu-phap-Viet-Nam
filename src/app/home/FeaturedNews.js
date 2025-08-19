@@ -1,9 +1,11 @@
 export default function FeaturedNews() {
     return (
-        <div className="flex mt-8 ">
-            <img className="w-[55%] object-cover" src="/anh-tin-noi-bat.png" alt="Thủ tướng chính phủ Phạm Minh Chính" />
-            <div className="w-[45%] px-[2.5%]">
-                <h2 className="w-full text-[2.4rem] text-center py-1 text-white bg-[var(--color-primary)]">TIN NỔI BẬT</h2>
+        <div className="lg:flex mt-8 ">
+            <img className="w-full lg:w-[55%] object-cover" src="/anh-tin-noi-bat.png" alt="Thủ tướng chính phủ Phạm Minh Chính" />
+            <div className="lg:w-[45%] lg:px-[2.5%] mt-7 lg:mt-0">
+                <h2 className="w-full text-[2.4rem] text-center py-1 text-white bg-[var(--color-primary)]">
+                    TIN NỔI BẬT
+                </h2>
                 <div className="mt-8">
                     <div className="cursor-pointer">
                         <h3 className="text-[2rem] font-medium text-[var(--color-primary)]">

@@ -3,56 +3,60 @@ export default function LegalDocuments() {
         <div>
             <h2 className="text-[2.4rem] font-bold text-[var(--color-primary)]">VĂN BẢN PHÁP LUẬT</h2>
             {/* lọc & tìm kiếm */}
-            <div className="flex gap-10">
-                {/* Loại văn bản */}
-                <div>
-                    <h4 className="font-medium">Loại văn bản</h4>
-                    <div className="border w-70 px-4 relative mt-1 text-[1.4rem]">
-                        Tất cả
-                        <img className="absolute right-5 top-1/2" src="/mui-ten-xuong.png" alt="" />
-                    </div>
-                </div>
-
-                {/* Phân loại */}
-                <div>
-                    <h4 className="font-medium">Phân loại</h4>
-                    <div className="border w-70 px-4 relative mt-1 text-[1.4rem]">
-                        Tất cả
-                        <img className="absolute right-5 top-1/2" src="/mui-ten-xuong.png" alt="" />
-                    </div>
-                </div>
-
-                {/* Cơ quan ban hành */}
-                <div>
-                    <h4 className="font-medium">Cơ quan ban hành</h4>
-                    <div className="border w-70 px-4 relative mt-1 text-[1.4rem]">
-                        Tất cả
-                        <img className="absolute right-5 top-1/2" src="/mui-ten-xuong.png" alt="" />
-                    </div>
-                </div>
-
-                {/* Năm phát hành */}
-                <div>
-                    <h4 className="font-medium">Năm phát hành</h4>
-                    <div className="flex gap-8">
-                        <div className="border w-50 px-4 relative mt-1 text-[1.4rem]">
+            <div className="flex flex-col lg:flex-row gap-5 lg:gap-10">
+                <div className="w-[30%] flex flex-col sm:flex-row gap-5 lg:gap-10">
+                    {/* Loại văn bản */}
+                    <div className="w-1/2 min-w-[93px]">
+                        <h4 className="font-medium">Loại văn bản</h4>
+                        <div className="border w-full px-4 relative mt-1 text-[1.4rem]">
                             Tất cả
                             <img className="absolute right-5 top-1/2" src="/mui-ten-xuong.png" alt="" />
                         </div>
-                        <div className="border w-50 px-4 relative mt-1 text-[1.4rem]">
+                    </div>
+
+                    {/* Phân loại */}
+                    <div className="w-1/2 min-w-[91px]">
+                        <h4 className="font-medium">Phân loại</h4>
+                        <div className="border w-full px-4 relative mt-1 text-[1.4rem]">
                             Tất cả
                             <img className="absolute right-5 top-1/2" src="/mui-ten-xuong.png" alt="" />
                         </div>
                     </div>
                 </div>
-                <button className="flex items-end cursor-pointer">
-                    <div className="text-[1.4rem] bg-[var(--color-primary)] px-4 py-1 text-white h-1/2">Tìm kiếm</div>
+
+                <div className="w-[35%] flex flex-col sm:flex-row gap-5 lg:gap-10">
+                    {/* Cơ quan ban hành */}
+                    <div className="w-15/35 min-w-[137px]">
+                        <h4 className="font-medium">Cơ quan ban hành</h4>
+                        <div className="border w-full px-4 relative mt-1 text-[1.4rem]">
+                            Tất cả
+                            <img className="absolute right-5 top-1/2" src="/mui-ten-xuong.png" alt="" />
+                        </div>
+                    </div>
+
+                    {/* Năm phát hành */}
+                    <div className="w-20/35 min-w-[116px]">
+                        <h4 className="font-medium">Năm phát hành</h4>
+                        <div className="flex gap-8">
+                            <div className="border min-w-[75px] w-1/2 px-4 relative mt-1 text-[1.4rem]">
+                                Tất cả
+                                <img className="absolute right-5 top-1/2" src="/mui-ten-xuong.png" alt="" />
+                            </div>
+                            <div className="border min-w-[75px] w-1/2 px-4 relative mt-1 text-[1.4rem]">
+                                Tất cả
+                                <img className="absolute right-5 top-1/2" src="/mui-ten-xuong.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button className="flex w-[10%] min-w-[77px] items-end cursor-pointer">
+                    <div className="text-[1.4rem] w-full bg-[var(--color-primary)] px-4 py-1 text-white h-1/2">Tìm kiếm</div>
                 </button>
             </div>
 
             {/* Bảng và thông báo */}
-            <div className="mt-10 flex gap-15">
-                <table className="w-[70%] bg-red-100 text-center">
+            <div className="mt-10 flex flex-col lg:flex-row gap-15">
+                <table className="wfull lg:w-[70%] bg-red-100 text-center">
                     <thead>
                         <tr>
                             <th className="w-1/4 border border-black/30 h-[40px] text-white bg-[var(--color-primary)]">
@@ -70,30 +74,30 @@ export default function LegalDocuments() {
                         <tr className="even:bg-blue-300/50 odd:bg-white">
                             <td className="border border-black/40 font-medium">85/2024/ TT-BTC</td>
                             <td className="border border-black/40 font-medium">29/11/2024</td>
-                            <td className="text-start px-[2%] py-5 line-clamp-2 border border-black/40">Thông tư 85/2024/TT-BTC sửa đổi thông tư 69/2022/TT-BTC hướng dẫn chứng chỉ bảo hiểm, chứng chỉ đại lý bảo hiểm</td>
+                            <td className="text-start px-[2%] py-5 border border-black/40">Thông tư 85/2024/TT-BTC sửa đổi thông tư 69/2022/TT-BTC hướng dẫn chứng chỉ bảo hiểm, chứng chỉ đại lý bảo hiểm</td>
                         </tr>
 
                         <tr className="even:bg-blue-300/50 odd:bg-white">
                             <td className="border border-black/40 font-medium">85/2024/ TT-BTC</td>
                             <td className="border border-black/40 font-medium">29/11/2024</td>
-                            <td className="text-start px-[2%] py-5 line-clamp-2 border border-black/40">Thông tư 85/2024/TT-BTC sửa đổi thông tư 69/2022/TT-BTC hướng dẫn chứng chỉ bảo hiểm, chứng chỉ đại lý bảo hiểm</td>
+                            <td className="text-start px-[2%] py-5 border border-black/40">Thông tư 85/2024/TT-BTC sửa đổi thông tư 69/2022/TT-BTC hướng dẫn chứng chỉ bảo hiểm, chứng chỉ đại lý bảo hiểm</td>
                         </tr>
 
                         <tr className="even:bg-blue-300/50 odd:bg-white">
                             <td className="border border-black/40 font-medium">85/2024/ TT-BTC</td>
                             <td className="border border-black/40 font-medium">29/11/2024</td>
-                            <td className="text-start px-[2%] py-5 line-clamp-2 border border-black/40">Thông tư 85/2024/TT-BTC sửa đổi thông tư 69/2022/TT-BTC hướng dẫn chứng chỉ bảo hiểm, chứng chỉ đại lý bảo hiểm</td>
+                            <td className="text-start px-[2%] py-5  border border-black/40">Thông tư 85/2024/TT-BTC sửa đổi thông tư 69/2022/TT-BTC hướng dẫn chứng chỉ bảo hiểm, chứng chỉ đại lý bảo hiểm</td>
                         </tr>
 
                         <tr className="even:bg-blue-300/50 odd:bg-white">
                             <td className="border border-black/40 font-medium">85/2024/ TT-BTC</td>
                             <td className="border border-black/40 font-medium">29/11/2024</td>
-                            <td className="text-start px-[2%] py-5 line-clamp-2 border border-black/40">Thông tư 85/2024/TT-BTC sửa đổi thông tư 69/2022/TT-BTC hướng dẫn chứng chỉ bảo hiểm, chứng chỉ đại lý bảo hiểm</td>
+                            <td className="text-start px-[2%] py-5 border border-black/40">Thông tư 85/2024/TT-BTC sửa đổi thông tư 69/2022/TT-BTC hướng dẫn chứng chỉ bảo hiểm, chứng chỉ đại lý bảo hiểm</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <div className="w-[30%] border border-black/60">
+                <div className="w-full lg:w-[30%] border border-black/60">
                     <div className="h-[40px] bg-[var(--color-primary)] px-[3%] text-white text-[2rem] font-bold flex items-center">
                         <svg
                             className="w-[25px] h-[25px]"
